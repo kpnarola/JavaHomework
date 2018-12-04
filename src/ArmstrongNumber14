@@ -1,0 +1,23 @@
+import java.util.Scanner;
+/*WAP to input any number and check if it is
+Armstrong number or not*/
+
+public class ArmstrongNumber14 {
+    public static void main(String[] args) {
+        System.out.println("Please enter any number to check whether it is Armstrong or not");
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int d = a;
+        int b = 0, c = 0;
+        while (a!=0){
+            b=a%10;
+            c = c+(b*b*b);
+            a = a/10;
+
+        }if (d==c){
+            System.out.println("Number"+d+"is an Armstrong number");
+        }else{
+            System.out.println("Number d is not Armstrong number");
+        }
+    }
+}
